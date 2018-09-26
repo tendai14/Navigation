@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment2">'
+
+
+    <fragment
+        android:id="@+id/firstFragment2"
+        android:name="com.admusoft.user.navigation.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment2_to_secondFragement2"
+            app:destination="@id/secondFragement2" />
+        <action
+            android:id="@+id/action_firstFragment2_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragement2"
+        android:name="com.admusoft.user.navigation.SecondFragement"
+        android:label="fragment_second_fragement"
+        tools:layout="@layout/fragment_second_fragement" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.admusoft.user.navigation.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+</navigation>
